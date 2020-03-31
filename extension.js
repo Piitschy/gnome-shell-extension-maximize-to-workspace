@@ -1,5 +1,7 @@
 const Meta = imports.gi.Meta;
 
+//Forked from rliang - https://github.com/rliang
+
 /* This has been tested with both static and dynamic workspaces.  It
  * works better with dynamic workspaces, but can work well if you have
  * enough static ones.
@@ -10,6 +12,7 @@ const Meta = imports.gi.Meta;
  *  target a specific desktop when none are empty
  *  (don't) skip first desktop
  */
+
 function check(act) {
   const win = act.meta_window;
   const workspacemanager = win.get_display().get_workspace_manager();
